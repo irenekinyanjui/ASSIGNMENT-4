@@ -33,45 +33,50 @@ zipcode=input()
 credit_score = input("Enter credit score:")
 print ("credit score:" + credit_score)
 if int(credit_score)>=780 & 850:
-    down_payment = (0.0 * int(price))
+    down_payment = (0.0 * float(price))
     print("Excent Credit")
     print(f"Zero Down Payment:{down_payment}")
 elif int(credit_score)>=720 & 739:
     print("Very Good")
-    down_payment =(0.3 * int(price))
+    down_payment =(0.3 *float (price))
     print(f"Down Payment:{down_payment}")
 
 elif int(credit_score) >= 680 & 719:
     print("Average")
-    down_payment = (0.6 * int(price))
+    down_payment = (0.6 * float(price))
     print(f"Down Payment:{down_payment}")
 
 elif int(credit_score) >= 680 & 679:
     print("below Average:")
-    down_payment = (0.18 * int(price))
+    down_payment = (0.18 * float(price))
     print(f"Down Payment:{down_payment}")
     below_Average =input()
 
 elif int(credit_score) >= 580 & 619:
-    print("below Average:")
-    down_payment = (0.20 * int(price))
+    credit_status = "below Average"
+    print(credit_status)
+    down_payment = (0.20 * float(price))
     print(f"Down Payment:{down_payment}")
-    poor_credit_score = input()
+
 
 else:
     int(credit_score) <520
-    print("poor credit score")
-    down_payment = (0.25 * int(price))
+    credit_status = "poor Score"
+    print(credit_status)
+    down_payment = (0.25 * float(price))
+
 
 print("Fullnames:"+ fullnames)
-print("Physical Address:" + mail_Address)
+#print("Physical Address:" + mail_Address)
 print("City:" + city)
-print("Zipcode:" + zipcode)
+#print("Zipcode:" + zipcode)
+print("Physical Address: is {} and Zipcode:{}" .format(mail_Address,zipcode))
 
 print("New House Price:" +  price)
 print("Email:" + email)
 print(f"Down Payment:{down_payment}")
-#print("Credit Status:" " "+ credit_score)
+print("Credit Score:" "" +credit_score)
+print("Credit Status:" ""+ credit_status)
 print("Phone Number:" + str(phone_number))
 
 
